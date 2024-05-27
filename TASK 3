@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class SimpleChatBot {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.println("Hello! I am a simple chatbot. What's your name?");
+        String name = scanner.nextLine();
+        System.out.println("Nice to meet you, " + name + "!");
+        
+        System.out.println("How has your day been so far?");
+        String mood = scanner.nextLine();
+        System.out.println("That sounds " + mood + ". What have you been up to?");
+        
+        String activity = scanner.nextLine();
+        System.out.println("Sounds interesting! I hope you enjoyed " + activity + ".");
+        
+        System.out.println("Well, it was nice chatting with you, " + name + "! Goodbye!");
+    }
+}
